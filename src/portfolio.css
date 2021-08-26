@@ -5,6 +5,8 @@
 
 body {
   margin: 60px 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -14,7 +16,33 @@ h1 {
 }
 
 h3 {
-  font-family: "Manrope", sans-serif;
   color: var(--secondary-color);
   font-size: 24px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.first-project,
+.second-project,
+.third-project {
+  background-color: var(--home-color);
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.first-project,
+.third-project {
+  margin-right: 400px;
+  text-align: right;
+}
+
+.second-project {
+  margin-left: 400px;
 }
