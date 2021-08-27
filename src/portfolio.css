@@ -16,6 +16,7 @@ a {
   font-weight: 300;
   text-decoration: none;
   color: white;
+  padding: 10px;
 }
 
 a:hover {
@@ -31,14 +32,12 @@ h3 {
 img {
   display: block;
   margin: 0 auto;
-}
-
-.container-fluid {
-  padding: 0;
+  margin-bottom: 5px;
 }
 
 .hero {
-  padding: 40px 10px;
+  padding: 20px 10px;
+  margin-bottom: 50px;
 }
 
 .about,
@@ -46,9 +45,8 @@ img {
 .contact {
   background-color: var(--home-color);
   color: white;
-  padding: 15px;
-  margin-top: 50px;
-  border-radius: 4px;
+  margin-bottom: 50px;
+  border-radius: 5px;
 }
 
 .about,
@@ -66,4 +64,29 @@ img {
 
 .contact:hover {
   background-color: var(--contact-color);
+}
+
+@media (max-width: 576px) {
+  a {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .hero {
+    margin-bottom: 10px;
+  }
+
+  .about,
+  .projects,
+  .contact {
+    margin-bottom: 25px;
+    padding: 5px 0;
+  }
+
+  .menu-bars {
+    padding: 0 23px;
+  }
 }
