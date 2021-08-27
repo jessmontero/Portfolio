@@ -28,21 +28,14 @@ h3 {
   padding: 40px 0;
 }
 
-.first-project,
-.second-project,
-.third-project {
+.left,
+.right {
   background-color: var(--home-color);
   color: white;
   padding: 20px;
   margin-top: 50px;
 }
 
-.first-project,
-.third-project {
-  margin-right: 400px;
+.left {
   text-align: right;
-}
-
-.second-project {
-  margin-left: 400px;
 }
