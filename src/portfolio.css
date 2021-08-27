@@ -49,6 +49,10 @@ img {
   border-radius: 5px;
 }
 
+.projects {
+  padding: 0 0 5px 10px;
+}
+
 .about,
 .contact {
   text-align: right;
