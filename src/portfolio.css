@@ -11,17 +11,14 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-a,
-.name {
-  font-size: 70px;
-  font-weight: 300;
+a {
   text-decoration: none;
   color: white;
-  padding: 10px;
 }
 
 a:hover {
   color: white;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.4);
 }
 
 h1,
@@ -33,16 +30,38 @@ h3 {
 
 h2 {
   font-family: "Roboto Slab", serif;
-  color: var(--about-color);
   font-size: 90px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 p {
   font-weight: 400;
   font-size: 20px;
-  padding: 0 5px 5px 10px;
+}
+
+.menu-bar,
+.bar-title {
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 0.8;
+}
+
+.menu-bar {
+  padding: 30px 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.bar-title {
+  padding: 25px 0;
+}
+
+.bar {
+  margin-bottom: 50px;
+  border-radius: 5px;
+  color: white;
+  padding: 0 20px 5px;
 }
 
 .name-logo {
@@ -60,25 +79,6 @@ p {
 .projects,
 .contact {
   background-color: var(--home-color);
-  color: white;
-  margin-bottom: 50px;
-  border-radius: 5px;
-}
-
-.about-info {
-  background-color: var(--about-color);
-  color: white;
-  margin-top: 50px;
-  border-radius: 5px;
-}
-
-.projects {
-  padding: 0 0 5px 10px;
-}
-
-.about,
-.contact {
-  text-align: right;
 }
 
 .about:hover {
@@ -93,15 +93,32 @@ p {
   background-color: var(--contact-color);
 }
 
+.bar-projects {
+  background-color: var(--projects-color);
+}
+
+.about-title {
+  color: var(--about-color);
+}
+
+.projects-title {
+  color: var(--projects-color);
+}
+
+.bar-about {
+  background-color: var(--about-color);
+  margin-top: 50px;
+}
+
+.bar-about h1 {
+  color: white;
+}
+
 .selfie-img {
   border-radius: 5px;
 }
 
 @media (max-width: 576px) {
-  a {
-    font-size: 28px;
-  }
-
   h1,
   h3 {
     font-size: 16px;
@@ -109,6 +126,7 @@ p {
 
   h2 {
     font-size: 60px;
+    margin-bottom: 30px;
   }
 
   p {
@@ -120,23 +138,25 @@ p {
     margin-bottom: 10px;
   }
 
-  .about,
-  .projects,
-  .contact {
-    margin-bottom: 25px;
-    padding: 5px 0;
+  .bar-container {
+    margin: 0 10px;
   }
-
-  .menu-bars {
-    padding: 0 23px;
+  .menu-bar {
+    padding: 15px 10px;
+    font-size: 26px;
+    margin-bottom: 25px;
   }
 
   .selfie {
     margin-right: 10px;
   }
 
-  .name {
-    font-size: 28px;
-    padding: 10px 0;
+  .bar-title {
+    font-size: 26px;
+    padding-bottom: 18px;
+  }
+
+  .bar {
+    padding: 0 15px;
   }
 }
