@@ -57,6 +57,7 @@ ul {
   font-size: 28px;
   text-decoration: none;
   color: var(--projects-accent-color);
+  transition: all 200ms ease-in-out;
 }
 
 .go-link:hover {
@@ -74,23 +75,27 @@ ul {
 }
 
 .nav-home .nav-link:hover,
-.active-home {
+.active-home,
+.home-social a:hover {
   color: var(--home-accent-color) !important;
 }
 
 .nav-projects .nav-link:hover,
 .active-projects,
-.bar-title a:hover {
+.bar-title a:hover,
+.projects-social a:hover {
   color: var(--projects-accent-color) !important;
 }
 
 .nav-about .nav-link:hover,
-.active-about {
+.active-about,
+.about-social a:hover {
   color: var(--about-accent-color) !important;
 }
 
 .nav-contact .nav-link:hover,
-.active-contact {
+.active-contact,
+.contact-social a:hover {
   color: var(--contact-accent-color) !important;
 }
 
@@ -153,25 +158,29 @@ ul {
   transition: all 160ms ease-in-out;
 }
 
-.bg-homepage {
+.bg-homepage,
+.home-social {
   background-color: var(--home-color);
 }
 
 .bar-about,
 .bg-about,
-.about:hover {
+.about:hover,
+.about-social {
   background-color: var(--about-color);
 }
 
 .bar-projects,
 .bg-projects,
-.projects:hover {
+.projects:hover,
+.projects-social {
   background-color: var(--projects-color);
 }
 
 .bar-contact,
 .bg-contact,
-.contact:hover {
+.contact:hover,
+.contact-social {
   background-color: var(--contact-color);
 }
 
@@ -203,18 +212,11 @@ ul {
   text-decoration: none;
   font-size: 40px;
   margin: 0 30px;
-}
-
-.home-social {
-  background-color: var(--home-color);
-}
-
-.home-social a:hover {
-  color: var(--home-accent-color);
+  transition: all 200ms ease-in-out;
 }
 
 .small {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   padding-top: 20px;
   font-weight: 300;
