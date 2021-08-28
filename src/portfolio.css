@@ -2,10 +2,12 @@
   --home-color: #4d8db6;
   --home-accent-color: #255775;
   --about-color: #facb63;
+  --about-accent-color: #ce961f;
   --projects-color: #53b691;
+  --projects-accent-color: #1b6d69;
   --contact-color: #fa8c8c;
+  --contact-accent-color: #c74f4f;
   --secondary-color: #b2b2b2;
-  --link-hover: 4px solid rgba(255, 255, 255, 0.4);
 }
 
 body {
@@ -14,20 +16,6 @@ body {
 
 nav {
   margin-bottom: 50px;
-}
-
-.menu-bar a,
-.bar-title a,
-.bar-contact a {
-  text-decoration: none;
-  color: white;
-  transition: all 100ms ease-in-out;
-}
-
-.menu-bar a:hover,
-.bar-title a:hover,
-.bar-contact a:hover {
-  color: var(--home-accent-color);
 }
 
 h1,
@@ -58,35 +46,44 @@ ul {
   margin-bottom: 70px;
 }
 
-.bg-homepage {
-  background-color: var(--home-color);
+.menu-bar a,
+.bar-title a,
+.bar-contact a {
+  text-decoration: none;
+  color: white;
+  transition: all 100ms ease-in-out;
 }
 
-.bg-about {
-  background-color: var(--about-color);
-}
-
-.bg-projects {
-  background-color: var(--projects-color);
-}
-
-.bg-contact {
-  background-color: var(--contact-color);
+.menu-bar a:hover {
+  color: var(--home-accent-color);
 }
 
 .nav-link {
   color: white !important;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 20px;
 }
 
-.nav-link:hover {
+.nav-home .nav-link:hover,
+.active-home {
   color: var(--home-accent-color) !important;
 }
 
-.active {
-  color: var(--home-accent-color) !important;
-  font-weight: 400;
+.nav-projects .nav-link:hover,
+.active-projects,
+.bar-title a:hover {
+  color: var(--projects-accent-color) !important;
+}
+
+.nav-about .nav-link:hover,
+.active-about {
+  color: var(--about-accent-color) !important;
+}
+
+.nav-contact .nav-link:hover,
+.active-contact,
+.bar-contact a:hover {
+  color: var(--contact-accent-color) !important;
 }
 
 .logo {
@@ -97,7 +94,7 @@ ul {
 .bar-title {
   font-size: 70px;
   font-weight: 300;
-  line-height: 0.8;
+  line-height: 0.9;
 }
 
 .menu-bar {
@@ -135,29 +132,31 @@ ul {
   transition: all 160ms ease-in-out;
 }
 
+.bg-homepage {
+  background-color: var(--home-color);
+}
+
+.bar-about,
+.bg-about,
 .about:hover {
   background-color: var(--about-color);
 }
 
+.bar-projects,
+.bg-projects,
 .projects:hover {
   background-color: var(--projects-color);
 }
 
+.bar-contact,
+.bg-contact,
 .contact:hover {
   background-color: var(--contact-color);
 }
 
-.bar-projects {
-  background-color: var(--projects-color);
-}
-
-.bar-about {
-  background-color: var(--about-color);
-  margin-top: 50px;
-}
-
-.bar-contact {
-  background-color: var(--contact-color);
+.selfie-img {
+  margin-bottom: 50px;
+  border-radius: 5px;
 }
 
 .about-title {
@@ -170,10 +169,6 @@ ul {
 
 .contact-title {
   color: var(--contact-color);
-}
-
-.selfie-img {
-  border-radius: 5px;
 }
 
 @media (max-width: 576px) {
@@ -206,10 +201,6 @@ ul {
     padding: 15px 10px;
     font-size: 26px;
     margin-bottom: 25px;
-  }
-
-  .selfie {
-    margin-right: 10px;
   }
 
   .bar-title {
