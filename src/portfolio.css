@@ -1,8 +1,8 @@
 :root {
   --home-color: #4d8db6;
   --about-color: #facb63;
-  --projects-color: #fa8c8c;
-  --contact-color: #53b691;
+  --projects-color: #53b691;
+  --contact-color: #fa8c8c;
   --secondary-color: #b2b2b2;
 }
 
@@ -100,6 +100,15 @@ p {
   background-color: var(--projects-color);
 }
 
+.bar-about {
+  background-color: var(--about-color);
+  margin-top: 50px;
+}
+
+.bar-contact {
+  background-color: var(--contact-color);
+}
+
 .about-title {
   color: var(--about-color);
 }
@@ -108,13 +117,8 @@ p {
   color: var(--projects-color);
 }
 
-.bar-about {
-  background-color: var(--about-color);
-  margin-top: 50px;
-}
-
-.bar-about h1 {
-  color: white;
+.contact-title {
+  color: var(--contact-color);
 }
 
 .selfie-img {
