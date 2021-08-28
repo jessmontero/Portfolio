@@ -195,8 +195,9 @@ ul {
   }
 
   .bar-container {
-    margin: 0 10px;
+    margin: 0 15px;
   }
+
   .menu-bar {
     padding: 15px 10px;
     font-size: 26px;
@@ -210,6 +211,15 @@ ul {
 
   .bar {
     padding: 0 15px;
+  }
+
+  .bar,
+  .selfie-img {
+    margin-bottom: 30px;
+  }
+
+  .img-container {
+    margin-right: 16px;
   }
 
   .logo {
