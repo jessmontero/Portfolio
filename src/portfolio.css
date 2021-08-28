@@ -192,6 +192,34 @@ ul {
   color: var(--contact-color);
 }
 
+.social {
+  margin-top: 80px;
+  padding: 20px 0 5px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.social a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin: 0 30px;
+}
+
+.home-social {
+  background-color: var(--home-color);
+}
+
+.home-social a:hover {
+  color: var(--home-accent-color);
+}
+
+.small {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
+  padding-top: 20px;
+  font-weight: 300;
+}
+
 @media (max-width: 576px) {
   h1,
   h3 {
