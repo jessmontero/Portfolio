@@ -47,11 +47,20 @@ ul {
 }
 
 .menu-bar a,
-.bar-title a,
-.bar-contact a {
+.bar-title a {
   text-decoration: none;
   color: white;
   transition: all 100ms ease-in-out;
+}
+
+.go-link {
+  font-size: 28px;
+  text-decoration: none;
+  color: var(--projects-accent-color);
+}
+
+.go-link:hover {
+  color: white;
 }
 
 .menu-bar a:hover {
@@ -81,9 +90,21 @@ ul {
 }
 
 .nav-contact .nav-link:hover,
-.active-contact,
-.bar-contact a:hover {
+.active-contact {
   color: var(--contact-accent-color) !important;
+}
+
+.contact-link {
+  color: var(--contact-accent-color);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: white;
+}
+
+.project-link {
+  padding-bottom: 12px;
 }
 
 .logo {
@@ -213,13 +234,17 @@ ul {
     padding: 0 15px;
   }
 
+  .bar-contact p {
+    padding-bottom: 0;
+  }
+
   .bar,
   .selfie-img {
     margin-bottom: 30px;
   }
 
   .img-container {
-    margin-right: 16px;
+    margin-right: 22px;
   }
 
   .logo {
@@ -228,5 +253,9 @@ ul {
 
   .navbar {
     margin-bottom: 20px;
+  }
+
+  .go-link {
+    font-size: 20px;
   }
 }
