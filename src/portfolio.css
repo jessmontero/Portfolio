@@ -107,6 +107,15 @@ p {
     font-size: 16px;
   }
 
+  h2 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 0 0 5px 0;
+  }
+
   .hero {
     margin-bottom: 10px;
   }
@@ -120,5 +129,14 @@ p {
 
   .menu-bars {
     padding: 0 23px;
+  }
+
+  .selfie {
+    margin-right: 10px;
+  }
+
+  .name {
+    font-size: 28px;
+    padding: 10px 0;
   }
 }
