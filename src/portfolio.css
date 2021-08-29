@@ -216,9 +216,15 @@ ul {
 
 .small {
   font-size: 14px;
-  padding-top: 20px;
+  padding-top: 30px;
   font-weight: 300;
   color: white;
+}
+
+.small a {
+  font-size: 14px;
+  color: white;
+  margin: 0;
 }
 
 @media (max-width: 576px) {
@@ -290,7 +296,7 @@ ul {
 
   .social {
     margin-top: 30px;
-    padding-top: 25px;
+    padding: 25px 15px 0;
   }
 
   .social a {
@@ -299,7 +305,12 @@ ul {
   }
 
   .small {
-    font-size: 12px;
-    padding-top: 10px;
+    font-size: 11px;
+    padding-top: 14px;
+  }
+
+  .small a {
+    font-size: 11px;
+    margin: 0;
   }
 }
