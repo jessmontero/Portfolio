@@ -1,7 +1,7 @@
 :root {
   --home-color: #4d8db6;
   --home-accent-color: #255775;
-  --about-color: #facb63;
+  --about-color: #fcc858;
   --about-accent-color: #ce961f;
   --projects-color: #53b691;
   --projects-accent-color: #1b6d69;
@@ -206,27 +206,29 @@ ul {
   padding: 50px 0 12px;
 }
 
-.social a,
-.small,
-.small a {
+.social a {
   color: white;
   opacity: 85%;
 }
 
 .social a {
   text-decoration: none;
-  font-size: 32px;
-  margin: 0 45px;
+  font-size: 44px;
+  margin: 0 30px;
   transition: all 200ms ease-in-out;
 }
 
-.small {
+.small,
+.small a {
+  color: white;
   font-size: 14px;
+}
+
+.small {
   padding-top: 25px;
 }
 
 .small a {
-  font-size: 14px;
   margin: 0;
 }
 
@@ -269,7 +271,7 @@ ul {
   }
 
   .bar {
-    padding: 0 15px;
+    padding: 0 12px;
   }
 
   .bar-contact p {
@@ -304,7 +306,7 @@ ul {
 
   .social a {
     font-size: 20px;
-    margin: 0 20px;
+    margin: 0 15px;
   }
 
   .small,
