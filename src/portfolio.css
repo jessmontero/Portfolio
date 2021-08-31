@@ -203,12 +203,18 @@ ul {
 
 .social {
   margin-top: 80px;
-  padding: 45px 0 5px;
+  padding: 45px 0 10px;
+}
+
+.social a,
+.small,
+.small a {
+  color: white;
+  opacity: 90%;
 }
 
 .social a {
   text-decoration: none;
-  color: white;
   font-size: 35px;
   margin: 0 40px;
   transition: all 200ms ease-in-out;
@@ -217,13 +223,10 @@ ul {
 .small {
   font-size: 14px;
   padding-top: 30px;
-  font-weight: 300;
-  color: white;
 }
 
 .small a {
   font-size: 14px;
-  color: white;
   margin: 0;
 }
 
@@ -238,7 +241,7 @@ ul {
   }
 
   p {
-    font-size: 14px;
+    font-size: 15px;
     padding: 0 0 5px 0;
   }
 
@@ -296,21 +299,24 @@ ul {
 
   .social {
     margin-top: 30px;
-    padding: 25px 15px 0;
+    padding: 25px 15px 5px;
   }
 
   .social a {
     font-size: 25px;
-    margin: 0 10px;
+    margin: 0 15px;
+  }
+
+  .small,
+  .small a {
+    font-size: 10px;
   }
 
   .small {
-    font-size: 11px;
     padding-top: 14px;
   }
 
   .small a {
-    font-size: 11px;
     margin: 0;
   }
 }
